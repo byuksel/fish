@@ -1,0 +1,5 @@
+node_modules
+# Ignore Emacs autosaves of older versions
+**/*~
+# Ignore Emacs auto rescue files
+**/#*#
