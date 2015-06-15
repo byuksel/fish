@@ -24,8 +24,10 @@ module.exports = function(grunt) {
       test: {
         options: {
           reporter: 'spec',
+          // require: 'coverage/blanket',
           captureFile: 'test/output/output.txt'
         },
+        
         src: ['test/**/*.js']
       }
     },
@@ -55,7 +57,7 @@ module.exports = function(grunt) {
         src: [ 'browser/test/suite.js' ],
         dest: './browser/test/browserified_tests.js',
         options: {
-          external: [ './fish.js' ],
+          external: [ './index.js' ],
           // Embed source map for tests
           debug: true
         }
